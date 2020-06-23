@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChoiceChip">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textviewid"
+        android:text="Gender">
+
+    </TextView>
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:id="@+id/chipgroup1">
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:text="Male"
+            app:chipStrokeWidth="1dp"
+            app:chipBackgroundColor="@drawable/chip_selection"
+            app:chipStrokeColor="@color/colorPrimary">
+
+        </com.google.android.material.chip.Chip>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:text="Female"
+            app:chipStrokeWidth="1dp"
+            app:chipStrokeColor="@color/colorPrimary"
+            app:chipBackgroundColor="@drawable/chip_selection">
+        </com.google.android.material.chip.Chip>
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:scrollbarSize="1dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            android:id="@+id/chipgroup2">
+
+        </com.google.android.material.chip.ChipGroup>
+
+
+    </HorizontalScrollView>
+
+</LinearLayout>
